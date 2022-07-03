@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat&family=Poppins&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+}
+.offset::before{
+    display: block;
+    content: "";
+    height: 6rem;
+}
+.navbar {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    background: rgba(0, 0, 0, 0.6) !important;
+    padding: 20px 0;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    padding-left: 50px;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: #1ebba3;
+}
+.heading-content{
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    max-width: 100%;
+}
+.heading-content h5{
+   font-size: 3em;
+   font-weight: 300;
+   color: white;
+   font-family: monospace;
+}
+
+.heading-content h1{
+    font-size: 4em;
+    font-weight: bolder;
+    color: red;
+    font-family: 'Montserrat', sans-serif;
+ }
+ .heading-content p{
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: #1ebba3;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+
+ }
+
+ /*----------About start-------------*/
+
+ #about .btn{
+    border: 2px solid transparent;
+    width: 40%;
+    padding: 15px 22px;
+    background: black;
+    border-radius: 5px;
+    margin-top: 10px;
+ }
+
+ #about .btn a{
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+ }
+ #about .btn:hover{
+    border: 2px solid #1ebba3;
+    cursor: pointer;
+ }
+
+ #about .div1{
+    padding-left: 70px;
+ }
+/*----------About end-------------*/
+
+/*----------Skills start-------------*/
+
+ #skills .card {
+    background-color: rgb(77, 79, 81);
+    cursor: pointer;
+    transition: transform 0.65s cubic-bezier(0.05, 0.2, 0.1, 1);
+    box-shadow: 0.65s cubic-bezier(0.05, 0.2, 0.1, 1);
+}
+
+#skills .card h4{
+    padding-top: 10px;
+    color: white;
+}
+
+#skills .card h3{
+    color: white;
+}
+
+#skills .card:hover {
+    box-shadow: 0px 2px 70px 0px rgb(253 71 102 / 5%);
+    transform: translateY(-5px);
+}
+
+/*----------Skills end-------------*/
+
+/*----------Media Query-------------*/
+
+@media screen and (max-width: 767px) {
+    .navbar {
+        letter-spacing: 0.1rem;
+        padding: 10px 0;
+    }
+    .heading-content h5{
+        font-size: 2em;
+     }
+     .heading-content h1{
+         font-size: 3em;
+      }
+      .heading-content p{
+         font-size: 1em;
+     
+      }
+}
+@media screen and (max-width: 479px) {
+    .navbar {
+        letter-spacing: 0.1rem;
+        padding: 6px 0;
+    }
+    .heading-content h5{
+        font-size: 1em;
+     }
+     .heading-content h1{
+         font-size: 2em;
+      }
+      .heading-content p{
+         font-size: 0.9em;
+     
+      }
+}
